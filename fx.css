@@ -1,0 +1,30 @@
+/* FX.CSS — nền NS MOD, thanh mục, canvas quái vật pixel, hiệu ứng ghép pixel khi cuộn */
+.bg{background:radial-gradient(120% 55% at 88% 6%,rgba(var(--acc-rgb),.17),transparent 62%),radial-gradient(90% 50% at 8% 52%,rgba(var(--acc-3-rgb),.12),transparent 66%),linear-gradient(180deg,#141418,#0d0c11)}
+.blob{opacity:.55}
+
+/* ký hiệu ☭ cần font có glyph */
+.head b,.logo small,.cta s,.gate-ico,.btn-main>span:first-child{font-family:"Apple Symbols","Segoe UI Symbol","Noto Sans Symbols 2","DejaVu Sans",sans-serif}
+
+/* canvas quanh avatar */
+.ring{overflow:visible}
+#orb{position:absolute;left:50%;top:50%;width:340px;height:340px;margin:-170px 0 0 -170px;pointer-events:none;z-index:3}
+
+/* thanh mục */
+.sec{margin:36px 0 12px}
+.sec .tag{padding:9px 18px 9px 13px;gap:11px;font-size:11px;letter-spacing:.15em;color:#ece6ff;border:2px solid transparent;border-radius:16px;
+  background:linear-gradient(#17132f,#17132f) padding-box,linear-gradient(120deg,#b66cff,#6d4cff 48%,rgba(var(--acc-rgb),.75)) border-box;
+  box-shadow:0 0 24px rgba(168,85,247,.28),inset 0 0 16px rgba(168,85,247,.14)}
+.sec .tag svg{font-size:18px;color:#c9a8ff}
+.sec em{font-size:10px;color:#8f86bf;letter-spacing:.16em}
+.head{height:62px;padding:0 18px;gap:14px;border-radius:22px;border:1.5px solid rgba(255,255,255,.15);color:#fff;font-size:clamp(16px,5.2vw,22px);white-space:nowrap;
+  background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.03));-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 10px 26px rgba(0,0,0,.35)}
+.head b{width:38px;height:38px;border-radius:12px;font-size:20px;color:#efe6ff;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.07)}
+
+/* ghép pixel khi cuộn xuống / tan pixel khi cuộn lên */
+.rv.in{animation:pxin .6s steps(7,end) backwards;animation-delay:0s}
+@keyframes pxin{0%{opacity:0;filter:brightness(2) saturate(1.8);transform:translateY(10px)}55%{opacity:.8;filter:brightness(1.35)}}
+.rv.out{animation:pxout .4s steps(5,end) backwards}
+@keyframes pxout{from{opacity:1;filter:brightness(1.8)}}
+#pix{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:20}
+@media (prefers-reduced-motion:reduce){#pix{display:none}}

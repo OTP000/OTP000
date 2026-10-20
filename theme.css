@@ -1,0 +1,150 @@
+/* ==========================================================================
+   THEME.CSS  —  NƠI DUY NHẤT ĐỂ ĐỔI MÀU GIAO DIỆN
+   --------------------------------------------------------------------------
+   Cách dùng:
+   1) Đổi bộ màu mặc định:  trong config.js sửa   theme: "h2"
+      (h2 | emerald | inferno | midnight)
+   2) Muốn màu riêng: copy cả khối [data-theme="h2"] bên dưới, đổi tên thành
+      [data-theme="ten-moi"], sửa mã màu, rồi thêm tên đó vào THEMES trong config.js
+   3) Người xem cũng có thể bấm nút 🎨 trên thanh đầu trang để đổi màu (tự nhớ).
+
+   Giải thích nhanh các biến:
+     --acc / --acc-2 / --acc-3   màu nhấn chính / bản đậm hơn / màu phối thứ hai
+     --acc-rgb / --acc-3-rgb     cùng màu nhưng viết dạng R,G,B (dùng cho hiệu ứng phát sáng)
+     --on-acc                    màu chữ nằm trên nền màu nhấn (nút bấm)
+     --card-1 / --card-2         2 đầu dải màu nền của thẻ
+     --line / --line-2           viền thường / viền sáng
+   ========================================================================== */
+
+
+/* ---- 0. NS MOD — than chì × tím indigo × đỏ hồng (mặc định, theo ảnh mẫu) ---- */
+:root[data-theme="nsmod"]{
+  --bg:#0d0c11; --bg-2:#17141c;
+  --acc:#ff3b57; --acc-2:#c81e4a; --acc-3:#a855f7;
+  --tint:#dcc8ff; --on-acc:#ffffff;
+  --acc-rgb:255,59,87; --acc-3-rgb:168,85,247;
+  --warn:#fbbf24;
+  --card-1:#261e52; --card-2:#120e2a;
+  --panel:rgba(14,12,26,.86);
+  --line:#2f2a52; --line-2:#4a3a8f;
+  --text:#f4f2fb; --muted:#a09bbd; --silver:#d6d9e6;
+  --chrome:linear-gradient(180deg,#ffffff 0%,#c4cde0 38%,#69738a 52%,#dfe5f0 100%);
+  --st1:#e23a3a; --st2:#16a37f; --st3:#e8960f;
+}
+
+
+/* ---- 1. KAWASAKI NINJA H2 — Mirror Spark Black × Lime Green × Chrome (mặc định) ---- */
+:root,
+:root[data-theme="h2"]{
+  --bg:#050706;            /* đen gương Spark Black */
+  --bg-2:#0a100c;
+
+  --acc:#7bff1c;           /* Kawasaki lime */
+  --acc-2:#2fae00;         /* lime đậm */
+  --acc-3:#18f0c4;         /* mint – ánh phản chiếu hiện đại */
+  --tint:#d2ffae;
+  --on-acc:#06140a;
+  --acc-rgb:123,255,28;
+  --acc-3-rgb:24,240,196;
+  --warn:#ffc53d;          /* màu lưu ý (nhớ xem video...) */
+
+  --card-1:#13201a;
+  --card-2:#080d0a;
+  --panel:rgba(7,11,9,.88);
+  --line:#1f3626;
+  --line-2:#33603f;
+
+  --text:#eef8f0;
+  --muted:#8aa595;
+  --silver:#d5dfd9;
+  --chrome:linear-gradient(180deg,#ffffff 0%,#c9d6cf 36%,#56675e 52%,#e6efe9 100%);
+
+  --st1:#7bff1c; --st2:#18f0c4; --st3:#ffc53d;   /* 3 thẻ thống kê */
+}
+
+
+/* ---- 2. H2 SX — Emerald Blazed Green (xanh ngọc + xanh trời) ---- */
+:root[data-theme="emerald"]{
+  --bg:#04090a;
+  --bg-2:#081214;
+
+  --acc:#19e6a8;
+  --acc-2:#00977a;
+  --acc-3:#5cc8ff;
+  --tint:#b6ffe8;
+  --on-acc:#03120e;
+  --acc-rgb:25,230,168;
+  --acc-3-rgb:92,200,255;
+  --warn:#ffd166;
+
+  --card-1:#0f1f22;
+  --card-2:#070f11;
+  --panel:rgba(5,12,14,.88);
+  --line:#17363a;
+  --line-2:#26606a;
+
+  --text:#ecfafa;
+  --muted:#86a8ab;
+  --silver:#d0e0e2;
+  --chrome:linear-gradient(180deg,#ffffff 0%,#c5dde0 36%,#546d72 52%,#e2f0f2 100%);
+
+  --st1:#19e6a8; --st2:#5cc8ff; --st3:#ffd166;
+}
+
+
+/* ---- 3. INFERNO — Cam lửa ống xả × vàng (siêu nạp nóng) ---- */
+:root[data-theme="inferno"]{
+  --bg:#080504;
+  --bg-2:#120a07;
+
+  --acc:#ff6b1a;
+  --acc-2:#c2410c;
+  --acc-3:#ffd23f;
+  --tint:#ffd2b0;
+  --on-acc:#180701;
+  --acc-rgb:255,107,26;
+  --acc-3-rgb:255,210,63;
+  --warn:#ffd23f;
+
+  --card-1:#241410;
+  --card-2:#0e0806;
+  --panel:rgba(12,7,5,.88);
+  --line:#3a2118;
+  --line-2:#6b3a26;
+
+  --text:#fff3ec;
+  --muted:#b09286;
+  --silver:#e8d8d0;
+  --chrome:linear-gradient(180deg,#ffffff 0%,#ead3c8 36%,#7a5a4c 52%,#f6e6de 100%);
+
+  --st1:#ff6b1a; --st2:#ffd23f; --st3:#ff3b57;
+}
+
+
+/* ---- 4. MIDNIGHT — Đỏ × tím (màu gốc của web cũ) ---- */
+:root[data-theme="midnight"]{
+  --bg:#0b0a10;
+  --bg-2:#120e2a;
+
+  --acc:#ff3b57;
+  --acc-2:#c81e4a;
+  --acc-3:#a855f7;
+  --tint:#d8b4fe;
+  --on-acc:#ffffff;
+  --acc-rgb:255,59,87;
+  --acc-3-rgb:168,85,247;
+  --warn:#fbbf24;
+
+  --card-1:#241c4c;
+  --card-2:#120e2a;
+  --panel:rgba(10,8,18,.86);
+  --line:#2f2a52;
+  --line-2:#4a3a8f;
+
+  --text:#f4f2fb;
+  --muted:#a09bbd;
+  --silver:#cfd6e4;
+  --chrome:linear-gradient(180deg,#ffffff 0%,#c4cde0 38%,#69738a 52%,#dfe5f0 100%);
+
+  --st1:#e23a3a; --st2:#16a37f; --st3:#e8960f;
+}
