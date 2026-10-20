@@ -222,7 +222,7 @@ const APPS = [
         name: "Suộc website 20/10 hành tinh",
         desc: "Dùng Tặng Ny/Nyc 20/10",
         icon: "https://raw.githubusercontent.com/OTP000/-nh/refs/heads/main/IMG_1645.jpeg",
-        link: "#",
+        link: "https://drive.google.com/file/d/1ma1PfEU0rTIBVfDbwbIEWGFljgw4SUJz/view?usp=drivesdk",
         type: "SCR"
       },
       {
