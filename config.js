@@ -32,8 +32,8 @@ const CONFIG = {
      Cách 3: link GitHub raw hoặc link blob (tự đổi sang raw)
               music: "https://github.com/USER/REPO/blob/main/music/nhac.mp3"
      Để "" nếu không dùng nhạc.   Lưu ý: GitHub Pages phân biệt HOA/thường.  */
-  music:  "music/nhac.mp3",
-  volume: 0.6,                    // 0 → 1
+  music:  "music/nhac.mp4",
+  volume: 1.0,                    // 0 →  
 
   /* ---- ICON ỨNG DỤNG ----
      Trong mỗi mục ở APPS, ô  icon  nhận được:
