@@ -22,7 +22,7 @@ const CONFIG = {
      • link ảnh bất kỳ:   "https://..."
      Không tải được ảnh thì tự hiện chữ thương hiệu.                       */
   /* MẶC ĐỊNH: bỏ ảnh vào thư mục icon/ — icon/avatar.png (hoặc .jpg/.webp, chỉ cần ghi "avatar") */
-  avatar: "icon/avatar.png",
+  avatar: "icon/avatar.heic",
 
   /* ---- NHẠC NỀN ----
      Cách 1 (khuyên dùng): bỏ file vào thư mục music/ trong repo, đặt tên nhac.mp3
