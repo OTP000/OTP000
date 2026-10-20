@@ -8,13 +8,13 @@
    ========================================================================== */
 
 const CONFIG = {
-  brand:  "NS MOD",
-  owner:  "Sonchoigame",
-  handle: "NSMOD",
-  telegram: "@Sonchoigame123",      // hiện ở màn hình chào
+  brand:  "Hanh Dev",
+  owner:  "Hanh Dev",
+  handle: "Hanh",
+  telegram: "@hanhluoitap",      // hiện ở màn hình chào
 
   /* ---- MÀU GIAO DIỆN: "nsmod" | "h2" | "emerald" | "inferno" | "midnight" ---- */
-  theme: "nsmod",
+  theme: "Hanh",
 
   /* ---- ẢNH ĐẠI DIỆN ----
      • file trong repo:   "avatar.jpg"
@@ -22,7 +22,7 @@ const CONFIG = {
      • link ảnh bất kỳ:   "https://..."
      Không tải được ảnh thì tự hiện chữ thương hiệu.                       */
   /* MẶC ĐỊNH: bỏ ảnh vào thư mục icon/ — icon/avatar.png (hoặc .jpg/.webp, chỉ cần ghi "avatar") */
-  avatar: "avatar",
+  avatar: "icon/avatar.png",
 
   /* ---- NHẠC NỀN ----
      Cách 1 (khuyên dùng): bỏ file vào thư mục music/ trong repo, đặt tên nhac.mp3
@@ -76,7 +76,7 @@ const CONFIG = {
 
 /* Danh sách bộ màu cho nút 🎨 (khớp với tên trong theme.css) */
 const THEMES = [
-  ["nsmod",    "NS MOD"],
+  ["Hanh",    "HANH DEV"],
   ["h2",       "Kawasaki H2"],
   ["emerald",  "H2 SX Emerald"],
   ["inferno",  "Inferno"],
@@ -92,10 +92,11 @@ const CATS = [
   ["lq",   "Liên Quân", favicon("lienquan.garena.vn")],
   ["ff",   "Free Fire", favicon("ff.garena.com")],
   ["app",  "App",       ""],
+  ["Src Web", "Scroure Web", favicon("https://raw.githubusercontent.com/OTP000/-nh/refs/heads/main/IMG_1643.jpeg")],
   ["pubg", "PUBG",      favicon("pubgmobile.com")]
 ];
 
-const TYPES = ["MOD", "PATCH", "IPA", "TOOL", "CONFIG", "RAW"];
+const TYPES = ["MOD", "PATCH", "IPA", "TOOL", "CONFIG", "RAW", "SCR"];
 
 /* Nhãn nhỏ trên thẻ: [chữ hiển thị, class, icon] */
 const TAGS = {
@@ -195,6 +196,34 @@ const APPS = [
         icon: "",
         link: "#",
         type: "CONFIG"
+      },
+      {
+        name: "APP ILOADER",
+        desc: "CÀI FILE PLIST...",
+        icon: "",
+        link: "#"
+      }
+    ]
+  },
+
+     /* ───────────── 3 ───────────── */
+  {
+    section: "Scoure Website 20/10",
+    title:   "Scroure Website",
+    defaults: { game:"app", type:"IPA", btn:"dl", tags:["ios"], note:"patch" },
+    items: [
+      {
+        name: "Scoure Web",
+        desc: "Suộc free",
+        icon: "",
+        link: "#"
+      },
+      {
+        name: "Suộc website 20/10 hành tinh",
+        desc: "Dùng Tặng Ny/Nyc 20/10",
+        icon: "https://raw.githubusercontent.com/OTP000/-nh/refs/heads/main/IMG_1645.jpeg",
+        link: "#",
+        type: "SCR"
       },
       {
         name: "APP ILOADER",
